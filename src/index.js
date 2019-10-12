@@ -14,7 +14,9 @@ async function savePage () {
     })
 
     await page.screenshot({
+        type: 'jpeg',
         path: 'dist/output.jpg',
+        quality: 100,
         fullPage: true
     })
     await browser.close()
